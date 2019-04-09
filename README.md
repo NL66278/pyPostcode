@@ -18,9 +18,13 @@ This library supports only the v2 api.
 
 ### Manually
 
-pyPostcode consists of a single file (pyPostcode.py) that you can put in your python search path or in site-packages (or dist-packages depending on the platform)
-You can also simply run it by putting it in the same directory as you main script file or start a python interpreter in the same directory.
-pyPostcode works with Python 2.7.x and 3.5.x (you're welcome to test other versions)
+You can run pyPostcode by changing to the main directory and call it as a
+package with the three required arguments:
+
+python -m pyPostcode <api-key> <postal code> <house_number>
+
+pyPostcode works with Python 2.7.x and 3.5.x (you're welcome to test other
+versions)
 
 ### API-key
 
@@ -59,9 +63,15 @@ the following information can be gathered from the result:
 * x ([Rijksdriehoek]/[Trigonometrical] coordinate)
 * y ([Rijksdriehoek]/[Trigonometrical] coordinate)
 
+## Limitations
+
+All messages/feedback are for now in Dutch. These should in the future
+be in English, Dutch or possibly other languages based on user locale.
+
 ## License
 
-"PostcodeApi" is owned by Apiwise, see http://postcodeapi.nu for more information.
+"PostcodeApi" is owned by Apiwise, see http://postcodeapi.nu for more
+information.
 I am in no way affiliated with PostcodeAPI or the Apiwise organization.
 
 [Rijksdriehoek]: http://nl.wikipedia.org/wiki/Rijksdriehoekscoördinaten
